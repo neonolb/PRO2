@@ -16,7 +16,7 @@ class Encuesta {
       return false;
     }
   
-    // Método para obtener los resultados de la encuesta
+    // Método para obtener los resultados de las encuestas
     obtenerResultados() {
       const resultados = {};
       this.opciones.forEach((opcion, index) => {
@@ -48,19 +48,14 @@ class Encuesta {
   // Ejemplo de uso
   const encuestasManager = new EncuestasManager();
   
-  // Crear una nueva encuesta
+  // Crear las Encuestas
   const encuesta1 = encuestasManager.crearEncuesta("¿Cuál es tu lenguaje de programación favorito?", ["JavaScript", "Python","C++"]);
   const encuesta2 = encuestasManager.crearEncuesta("¿Que Plataforma Cloud prefieres?", ["Amazon", "Azure", "Google"]);
   const encuesta3 = encuestasManager.crearEncuesta("¿Cual es tu BBDD Favorita?", ["MySql", "Oracle", "MongoDB"]);
   
-  // Votar en la encuesta
-  //encuesta1.votar("JavaScript");
-  //encuesta1.votar("Python");
-  //encuesta1.votar("JavaScript");
+ 
   
-  // Mostrar los resultados en tiempo real
-  //setInterval(() => {
-    const resultados = encuesta1.obtenerResultados();
+  
     const resultados2 = encuesta2.obtenerResultados();
     const resultados3 = encuesta3.obtenerResultados();
 
@@ -68,5 +63,3 @@ class Encuesta {
     console.log(resultados);
     console.log(resultados2);
     console.log(resultados3);
-  //}, 5000); // Actualizar cada 5 segundos
-  
