@@ -3,7 +3,7 @@ class Encuesta {
     constructor(pregunta, opciones) {
       this.pregunta = pregunta;
       this.opciones = opciones;
-      this.votos = new Array(opciones.length).fill(0); // Inicializa un array para almacenar los votos
+      this.votos = new Array(opciones.length).fill(0); 
     }
   
     // Método para votar por una opción
@@ -48,14 +48,14 @@ class Encuesta {
   // Ejemplo de uso
   const encuestasManager = new EncuestasManager();
   
-  // Crear las Encuestas
+  // Crear las Encuestas y las opciones
   const encuesta1 = encuestasManager.crearEncuesta("¿Cuál es tu lenguaje de programación favorito?", ["JavaScript", "Python","C++"]);
   const encuesta2 = encuestasManager.crearEncuesta("¿Que Plataforma Cloud prefieres?", ["Amazon", "Azure", "Google"]);
   const encuesta3 = encuestasManager.crearEncuesta("¿Cual es tu BBDD Favorita?", ["MySql", "Oracle", "MongoDB"]);
   
  
   
-  
+    const resultados1 = encuesta1.obtenerResultados();
     const resultados2 = encuesta2.obtenerResultados();
     const resultados3 = encuesta3.obtenerResultados();
 
