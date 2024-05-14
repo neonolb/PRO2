@@ -45,8 +45,13 @@ class Encuesta {
     }
   }
   
+
+
   // Ejemplo de uso
   const encuestasManager = new EncuestasManager();
+
+
+  
   
   // Crear las Encuestas y las opciones
   const encuesta1 = encuestasManager.crearEncuesta("¿Cuál es tu lenguaje de programación favorito?", ["JavaScript", "Python","C++"]);
@@ -60,6 +65,6 @@ class Encuesta {
     const resultados3 = encuesta3.obtenerResultados();
 
     console.log("Resultados de la encuesta:");
-    console.log(resultados);
+    console.log(resultados1);
     console.log(resultados2);
     console.log(resultados3);
