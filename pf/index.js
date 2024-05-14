@@ -30,7 +30,7 @@ const votar = (encuesta, opcionVotada) => {
 const mostrarResultados = encuesta => {
     console.log("Resultados de la encuesta:");
     console.log(encuesta.pregunta);
-    Object.entries(encuesta.opciones).forEach(([opcion, votos]) => {git add .Object
+    Object.entries(encuesta.opciones).forEach(([opcion, votos]) => {
         console.log(`${opcion}: ${votos}`);
     });
 };
