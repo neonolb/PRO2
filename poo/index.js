@@ -13,6 +13,8 @@ class Encuesta {
         this.votos[index]++;
         return true;
       }
+      console.log("La opción seleccionada no es válida.");
+      return this.opciones
       return false;
     }
   
@@ -45,20 +47,13 @@ class Encuesta {
     }
   }
   
-
-
   // Ejemplo de uso
   const encuestasManager = new EncuestasManager();
 
-
-  
-  
   // Crear las Encuestas y las opciones
   const encuesta1 = encuestasManager.crearEncuesta("¿Cuál es tu lenguaje de programación favorito?", ["JavaScript", "Python","C++"]);
   const encuesta2 = encuestasManager.crearEncuesta("¿Que Plataforma Cloud prefieres?", ["Amazon", "Azure", "Google"]);
   const encuesta3 = encuestasManager.crearEncuesta("¿Cual es tu BBDD Favorita?", ["MySql", "Oracle", "MongoDB"]);
-  
- 
   
     const resultados1 = encuesta1.obtenerResultados();
     const resultados2 = encuesta2.obtenerResultados();

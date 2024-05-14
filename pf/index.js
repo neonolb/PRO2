@@ -22,6 +22,7 @@ const votar = (encuesta, opcionVotada) => {
     } else {
         console.log("La opción seleccionada no es válida.");
         return encuesta;
+        return opciones;
     }
 };
 
@@ -38,7 +39,7 @@ const mostrarResultados = encuesta => {
 let encuesta1 = crearEncuesta("¿Que día quiere recuperar la clase?", ["Lunes", "Martes", "Miércoles","Jueves", "Viernes"]);
 let encuesta2 = crearEncuesta("¿Que Horario le acomoda?", ["15:00 a 17:00", "15:00 a 18:00", "18:00 a 21:00","19:00 a 22:00", "20:00 a 23:00"]);
 // Comando Consola para votar en la escuesta
-// encuesta1 = votar(encuesta1, "Rojo");
+// encuesta1 = votar(encuesta1, "Lunes");
 // encuesta2 = votar(encuesta2, "15:00 a 17:00");
 
 // Comando para Mostrar los resultados
