@@ -13,9 +13,9 @@ class Encuesta {
         this.votos[index]++;
         return true;
       }
-      console.log("La opción seleccionada no es válida.");
+      console.log("La opción seleccionada no es válida, debe elegir entre: ");
       return this.opciones
-      return false;
+      //return false;
     }
   
     // Método para obtener los resultados de las encuestas
@@ -54,6 +54,11 @@ class Encuesta {
   const encuesta1 = encuestasManager.crearEncuesta("¿Cuál es tu lenguaje de programación favorito?", ["JavaScript", "Python","C++"]);
   const encuesta2 = encuestasManager.crearEncuesta("¿Que Plataforma Cloud prefieres?", ["Amazon", "Azure", "Google"]);
   const encuesta3 = encuestasManager.crearEncuesta("¿Cual es tu BBDD Favorita?", ["MySql", "Oracle", "MongoDB"]);
+
+  // Comando de Consola para votar en la escuesta
+// encuesta1.votar('JavaScript');
+// encuesta2.votar('Azure');
+// encuesta3.votar('MongoDB');
   
     const resultados1 = encuesta1.obtenerResultados();
     const resultados2 = encuesta2.obtenerResultados();
