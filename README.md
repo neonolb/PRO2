@@ -183,7 +183,7 @@ Crea un repositorio en GitHub para este proyecto, con 2 carpetas para POO y PF.
 - https://github.com/neonolb/PRO2/tree/PRO2
 - Pantallazo de la soluciónes.
 
-
+![Banner](https://github.com/neonolb/PRO2/blob/PRO2/img_poo.png) 
 
 
 
