@@ -1,5 +1,5 @@
 
-![Banner](https://raw.githubusercontent.com/UDDBootcamp/7M_FULLSTACK_M1_PROY/master/images/banner.png?token=GHSAT0AAAAAACQUDIDXY2MROEC7RY57TE3UZQ53X2A) 
+![Banner](https://github.com/neonolb/PRO2/blob/PRO2/banner.png)
 ## PROYECTO 2: Sistema de Votación en JavaScript
 Bootcamper : Nolberto Hernández A. -  Cohort 14
 
